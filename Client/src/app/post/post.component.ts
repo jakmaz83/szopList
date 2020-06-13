@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Post, postData } from './../post';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-post',
@@ -10,7 +11,7 @@ import { Post, postData } from './../post';
 export class PostComponent {
   postId = null;
 
-  constructor(activatedRoute: ActivatedRoute) {
+  constructor(activatedRoute: ActivatedRoute, private location: Location) {
     activatedRoute.params.subscribe((params) => {
       this.postId = params.id;
     });
@@ -22,5 +23,8 @@ export class PostComponent {
     } else {
       return postData.find((post) => post.id === this.postId);
     }
+  }
+  goBack(): void {
+    this.location.back();
   }
 }
