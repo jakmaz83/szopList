@@ -1,0 +1,8 @@
+<H1>Lista Postów</H1>
+<ul>
+  <li *ngFor="let post of posts">
+    <a routerLink="/post/{{ post.id }}">{{ post.title }}> </a>
+    <span>{{ post.shortContent }}</span>
+    <hr />
+  </li>
+</ul>

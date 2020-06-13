@@ -1,0 +1,21 @@
+<app-login></app-login>
+
+<section class="admin">
+  <h3>Add post:</h3>
+  <div>
+    <label>Title</label>
+    <input [(ngModel)]="title" />
+  </div>
+
+  <div>
+    <label>Short content</label>
+    <textarea [(ngModel)]="shortContent"></textarea>
+  </div>
+
+  <div>
+    <label>Long content</label>
+    <textarea [(ngModel)]="longContent"></textarea>
+  </div>
+
+  <button (click)="handleSave()">Save</button>
+</section>

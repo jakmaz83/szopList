@@ -1,0 +1,7 @@
+<div *ngIf="postId !== null">
+  <h2>{{ getPost().title | uppercase }}</h2>
+  <hr />
+  <span>{{ getPost().shortContent }} </span>
+  <hr />
+  <span>{{ getPost().longContent }} </span>
+</div>
