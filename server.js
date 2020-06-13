@@ -40,10 +40,10 @@ app.get("/api/db-backup", (req, res) => {
 });
 
 // serve static angular files
-app.use("/", express.static(path.resolve(__dirname, "./client/dist/client")));
+app.use("/", express.static(path.resolve(__dirname, "./Client/dist/Client")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./client/dist/client/index.html"));
+  res.sendFile(path.resolve(__dirname, "./Client/dist/Client/index.html"));
 });
 
 app.listen(PORT);
