@@ -1,0 +1,32 @@
+<section *ngIf="accessToken" class="admin">
+  <div>
+    <h3>Add product:</h3>
+    <div>
+      <label>Name</label>
+      <input [(ngModel)]="name" />
+    </div>
+
+    <div>
+      <label>Category</label>
+      <input [(ngModel)]="category" />
+    </div>
+
+    <div>
+      <label>Max Price</label>
+      <input [(ngModel)]="maxPrice" />
+    </div>
+
+    <button (click)="handleSave()">Save</button>
+  </div>
+
+  <hr />
+
+  <div>
+    <h3>The list of available products (click on product to delete):</h3>
+    <ul>
+      <li *ngFor="let product of products" (click)="handleDelete(product._id)">
+        {{ product.name }}
+      </li>
+    </ul>
+  </div>
+</section>

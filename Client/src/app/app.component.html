@@ -1,2 +1,19 @@
-<h1>BLOG</h1>
-<router-outlet></router-outlet>
+<section class="main">
+  <header>
+    <h1 routerLink="/"></h1>
+  </header>
+  <nav>
+    <a routerLink="/">Home</a> |
+    <section *ngIf="accessToken">
+      <a routerLink="/productEditor">Product Editor</a> |
+      <a routerLink="/products">Products List</a> |
+      <span (click)="logout()">Logout</span>
+      |
+    </section>
+    <a *ngIf="accessToken === null" routerLink="/login">Login</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <footer>
+    <div>Server status: {{ status }}</div>
+  </footer>
+</section>

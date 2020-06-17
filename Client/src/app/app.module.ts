@@ -1,38 +1,58 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
-import { AdminComponent } from './admin/admin.component';
-import { AppComponent } from './app.component';
-import { PostComponent } from './post/post.component';
-import { PostsComponent } from './posts/posts.component';
-import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+import { ProductEditorComponent } from './productEditor/productEditor.component';
+import { ApiService } from './apiService';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { ProductComponent } from './product/product.component';
+import { ProductsComponent } from './products/products.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: PostsComponent,
+    component: HomeComponent,
   },
   {
-    path: 'post/:id',
-    component: PostComponent,
+    path: 'product/:id',
+    component: ProductComponent,
   },
   {
-    path: 'admin',
-    component: AdminComponent,
+    path: 'products',
+    component: ProductsComponent,
+  },
+  {
+    path: 'productEditor',
+    component: ProductEditorComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent,
-    PostComponent,
-    AdminComponent,
+    ProductsComponent,
+    ProductComponent,
+    ProductEditorComponent,
     LoginComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), FormsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
+    BrowserAnimationsModule,
+
+    HttpClientModule,
+  ],
+  providers: [ApiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

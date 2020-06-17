@@ -1,8 +1,8 @@
-<section>
+<section *ngIf="!accessToken" class="admin">
   <h3>Login:</h3>
   <div>
-    <label>e-mail</label>
-    <input [(ngModel)]="email" />
+    <label>User Name</label>
+    <input [(ngModel)]="userName" />
   </div>
 
   <div>
@@ -10,5 +10,5 @@
     <input [(ngModel)]="password" type="password" />
   </div>
 
-  <button (click)="handleLogin()">Login</button>
+  <button (click)="login()">Login</button>
 </section>

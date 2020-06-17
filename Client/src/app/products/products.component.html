@@ -1,0 +1,8 @@
+<section *ngFor="let product of products">
+  <div>
+    <h4>
+      <a routerLink="/product/{{ product._id }}">{{ product.name }}</a>
+    </h4>
+  </div>
+  <button>Add to Shop List</button>
+</section>

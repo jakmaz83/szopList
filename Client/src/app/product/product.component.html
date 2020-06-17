@@ -1,0 +1,11 @@
+<a routerLink="/products">&lt; back to products list</a>
+
+<section *ngIf="product !== null">
+  <div>
+    <h2>{{ product?.name }}</h2>
+  </div>
+
+  <p class="grey">
+    <strong>{{ product?.category }}</strong>
+  </p>
+</section>
