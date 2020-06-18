@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
+import { ShopListComponent } from './shop-list/shop-list.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
+  {
+    path: 'shopList',
+    component: ShopListComponent,
+  },
 ];
 
 @NgModule({
@@ -43,6 +48,7 @@ const routes: Routes = [
     ProductEditorComponent,
     LoginComponent,
     HomeComponent,
+    ShopListComponent,
   ],
   imports: [
     BrowserModule,

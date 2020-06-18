@@ -59,11 +59,10 @@ app.post("/api/login", async (req, res) => {
   }
 });
 
-// create post
+// create
 app.post("/api/products", authMiddleware, async (req, res) => {
   if (req.body.name !== "" && req.body.category !== "") {
     const doc = req.body;
-    doc.createdAt = Date.now();
 
     const product = await db.products.insert(doc);
     res.json(product);
@@ -72,7 +71,7 @@ app.post("/api/products", authMiddleware, async (req, res) => {
   }
 });
 
-// read post
+// read
 app.get("/api/products", async (req, res) => {
   const products = await db.products.find({});
   res.json(products);
@@ -83,7 +82,7 @@ app.get("/api/products/:id", async (req, res) => {
   res.json(product);
 });
 
-// update post
+// update
 app.put("/api/products/:id", authMiddleware, async (req, res) => {
   const doc = req.body;
   const docId = req.params.id;
@@ -91,7 +90,7 @@ app.put("/api/products/:id", authMiddleware, async (req, res) => {
   res.json(result);
 });
 
-// delete post
+// delete
 app.delete("/api/products/:id", authMiddleware, async (req, res) => {
   const result = await db.products.remove({ _id: req.params.id });
   res.json(result);

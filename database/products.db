@@ -1,3 +1,4 @@
-{"name":"Mleko","category":"nabiał","maxPrice":"12,2","createdAt":1592424241943,"_id":"s3h7n8pKnLlNmp6w"}
-{"name":"masło","category":"nabiał","maxPrice":"","createdAt":1592432497824,"_id":"IqRvzCs535fTjKqN"}
 {"name":"mąka tortowa","category":"mąka","maxPrice":"","createdAt":1592432521257,"_id":"Hi9Etg59nUJuz9k2"}
+{"name":"masło","category":"nabiał","maxPrice":"","createdAt":1592432497824,"_id":"IqRvzCs535fTjKqN"}
+{"name":"Mleko","category":"nabiał","maxPrice":"12,2","createdAt":1592424241943,"_id":"s3h7n8pKnLlNmp6w"}
+{"name":"woda gazowana","category":"woda","maxPrice":"","_id":"kD1xFEFGlL9LGNWx"}
