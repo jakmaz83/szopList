@@ -1,11 +1,17 @@
 <section class="main">
   <nav>
-    <h1>
+    <div class="navbar">
       <a
         routerLink="/"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         >Home</a
+      >
+      <a *ngIf="accessToken" routerLink="/shopList" routerLinkActive="active"
+        >Shop List</a
+      >
+      <a *ngIf="accessToken" routerLink="/products" routerLinkActive="active"
+        >Products List</a
       >
 
       <a
@@ -14,12 +20,7 @@
         routerLinkActive="active"
         >Product Editor</a
       >
-      <a *ngIf="accessToken" routerLink="/products" routerLinkActive="active"
-        >Products List</a
-      >
-      <a *ngIf="accessToken" routerLink="/shopList" routerLinkActive="active"
-        >Shop List</a
-      >
+
       <span class="lst" *ngIf="accessToken" (click)="logout()">Logout</span>
 
       <a
@@ -28,7 +29,7 @@
         routerLinkActive="active"
         >Login</a
       >
-    </h1>
+    </div>
   </nav>
   <router-outlet></router-outlet>
   <footer>

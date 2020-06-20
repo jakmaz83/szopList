@@ -1,11 +1,23 @@
 //navigation
-nav {
-  display: inline;
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  margin: none;
 
 }
 
-h1 {
-  background-color: #333;
+@media all and (max-width: 600px) {
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar>a,
+  span {
+    flex-basis: 25%;
+    flex: 1;
+  }
 
 }
 
@@ -18,6 +30,9 @@ span {
   padding-left: 5px;
   ;
 
+
+
+
   &:hover {
 
     cursor: pointer;
@@ -25,9 +40,7 @@ span {
   }
 }
 
-.lst {
-  float: right;
-}
+
 
 .active {
   background-color: white;

@@ -1,4 +1,8 @@
-{"name":"mąka tortowa","category":"mąka","maxPrice":"","createdAt":1592432521257,"_id":"Hi9Etg59nUJuz9k2"}
-{"name":"masło","category":"nabiał","maxPrice":"","createdAt":1592432497824,"_id":"IqRvzCs535fTjKqN"}
-{"name":"Mleko","category":"nabiał","maxPrice":"12,2","createdAt":1592424241943,"_id":"s3h7n8pKnLlNmp6w"}
-{"name":"woda gazowana","category":"woda","maxPrice":"","_id":"kD1xFEFGlL9LGNWx"}
+{"name":"kefir","productCategoryId":"jd9RXad31u7wF3Tl","basket":true,"_id":"LoSZ580lkXyotwhm"}
+{"name":"ogórki","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":true,"_id":"MC4WCPSvJlNSY7Vo"}
+{"name":"czereśnie","productCategoryId":"FyfNnb8eyp2J840W","basket":false,"_id":"YA5C2MrwCBaKiFPX"}
+{"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":false,"_id":"dU8T9Q6KKuMurOc8"}
+{"name":"krakowska","productCategoryId":"5qG4YIOyvhzNVbUz","basket":false,"_id":"gwz0fYggZT2IjHDg"}
+{"name":"pomidory","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":false,"_id":"nqjvSVH9UibBdxTm"}
+{"name":"masło","productCategoryId":"jd9RXad31u7wF3Tl","basket":true,"_id":"ovgoXEQ2056cg7vi"}
+{"name":"truskawki","productCategoryId":"FyfNnb8eyp2J840W","basket":true,"_id":"sRGcZyPBk9seliBi"}

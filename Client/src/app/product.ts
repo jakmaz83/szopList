@@ -1,7 +1,9 @@
 type Product = {
   name: string;
-  category: string;
+  productCategoryId: string;
   maxPrice?: number;
+  basket: boolean;
   _id?: string;
+  qty?: number;
 };
 export { Product };

@@ -8,14 +8,14 @@
 
     <div>
       <label>Category</label>
-      <input [(ngModel)]="category" />
+      <select [(ngModel)]="productCategoryId">
+        <option
+          *ngFor="let category of categories"
+          value="{{ category._id }}"
+          >{{ category.productCategory }}</option
+        >
+      </select>
     </div>
-
-    <div>
-      <label>Max Price</label>
-      <input [(ngModel)]="maxPrice" />
-    </div>
-
     <button (click)="handleSave()">Save</button>
   </div>
 

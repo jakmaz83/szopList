@@ -8,10 +8,11 @@ import { ApiService } from '../apiService';
 })
 export class ProductEditorComponent implements OnInit {
   name = '';
-  category = '';
-  maxPrice = '';
+  productCategoryId = null;
   accessToken = null;
   products = [];
+  categories = [];
+  basket = false;
 
   constructor(private apiService: ApiService) {
     this.accessToken = localStorage.getItem('accessToken');
@@ -21,13 +22,16 @@ export class ProductEditorComponent implements OnInit {
     this.apiService
       .getProducts()
       .then((products) => (this.products = products));
+    this.apiService
+      .getCategories()
+      .then((categories) => (this.categories = categories));
   }
 
   handleSave() {
     const doc: any = {
       name: this.name,
-      category: this.category,
-      maxPrice: this.maxPrice,
+      productCategoryId: this.productCategoryId,
+      basket: this.basket,
     };
 
     this.apiService.createProduct(doc).then(() => window.location.reload());

@@ -49,16 +49,6 @@ export class ApiService {
       .toPromise();
   }
 
-  updateProduct(doc: Product): Promise<number> {
-    return this.httpClient
-      .put<number>(
-        `${environment.apiUrl}/api/products/${doc._id}`,
-        doc,
-        this.httpOptions
-      )
-      .toPromise();
-  }
-
   deleteProduct(id: string): Promise<number> {
     return this.httpClient
       .delete<number>(
@@ -73,6 +63,27 @@ export class ApiService {
       .post(`${environment.apiUrl}/api/login`, {
         token: btoa(`${userName}:${password}`),
       })
+      .toPromise();
+  }
+  getCategories(): Promise<Array<any>> {
+    return this.httpClient
+      .get<Array<any>>(`${environment.apiUrl}/api/categories`)
+      .toPromise();
+  }
+
+  getSingleCategory(id: string): Promise<Array<Product>> {
+    return this.httpClient
+      .get<Array<Product>>(`${environment.apiUrl}/api/category/${id}`)
+      .toPromise();
+  }
+  addBasket(id: string): Promise<Product> {
+    return this.httpClient
+      .get<Product>(`${environment.apiUrl}/api/products/${id}/toggle-basket`)
+      .toPromise();
+  }
+  getSingleTrueCategory(): Promise<Array<Product>> {
+    return this.httpClient
+      .get<Array<Product>>(`${environment.apiUrl}/api/category`)
       .toPromise();
   }
 }

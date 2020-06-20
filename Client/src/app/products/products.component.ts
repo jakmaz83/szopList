@@ -9,11 +9,17 @@ import { ApiService } from '../apiService';
 export class ProductsComponent implements OnInit {
   products = null;
 
-  constructor(apiService: ApiService) {
+  constructor(private apiService: ApiService) {
     apiService.getProducts().then((data) => {
       this.products = data;
     });
   }
+  onClick(value) {
+    console.log(value);
+  }
 
   ngOnInit(): void {}
+  addBasket(id: string) {
+    this.apiService.addBasket(id);
+  }
 }
