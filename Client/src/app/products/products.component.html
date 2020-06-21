@@ -8,15 +8,7 @@
     <label>Quantity</label>
     <input #qty type="number" min="0" />
   </div>
-  <button (click)="onClick(qty.value); addBasket(product._id)">
+  <button (click)="addBasket(product._id)">
     Add to Shop List
   </button>
 </section>
-<div>
-  <h3>The list of available products (click on product to delete):</h3>
-  <ul>
-    <!-- <li *ngFor="let product of products" (click)="addBasket(product._id)"> -->
-    <!-- {{ product.name }} -->
-    <!-- </li> -->
-  </ul>
-</div>

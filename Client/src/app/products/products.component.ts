@@ -20,6 +20,8 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {}
   addBasket(id: string) {
-    this.apiService.addBasket(id);
+    this.apiService.addBasket(id).then(() => {
+      window.location.reload();
+    });
   }
 }

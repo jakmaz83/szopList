@@ -10,9 +10,21 @@ import { ApiService } from '../apiService';
 export class ShopListComponent {
   products = [];
   constructor(private apiService: ApiService) {
-    apiService.getSingleTrueCategory().then((data) => {
+    apiService.getBasketProducts().then((data) => {
       this.products = data;
     });
   }
+
+  /*constructor(private apiService: ApiService) {
+    apiService.getSingleTrueCategory().then((data) => {
+      this.products = data;
+    });
+  }*/
   ngOnInit(): void {}
+
+  addBasket(id: string) {
+    this.apiService.addBasket(id).then(() => {
+      window.location.reload();
+    });
+  }
 }

@@ -86,4 +86,9 @@ export class ApiService {
       .get<Array<Product>>(`${environment.apiUrl}/api/category`)
       .toPromise();
   }
+  getBasketProducts(): Promise<Array<Product>> {
+    return this.httpClient
+      .get<Array<Product>>(`${environment.apiUrl}/api/inBasket/`)
+      .toPromise();
+  }
 }
