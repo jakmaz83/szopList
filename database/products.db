@@ -1,11 +1,11 @@
-{"name":"truskawki","productCategoryId":"FyfNnb8eyp2J840W","basket":true,"_id":"dlCzxdYIwMEdFzU1"}
-{"name":"krakowska sucha","productCategoryId":"Sjc4bohr2GG4KfHq","basket":false,"_id":"jC4qA9VbCcPx9gG0"}
+{"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":true,"_id":"HEYejhRWHGKzrs4a"}
 {"name":"masło","productCategoryId":"jd9RXad31u7wF3Tl","basket":false,"_id":"ovgoXEQ2056cg7vi"}
-{"name":"truskawki","productCategoryId":"FyfNnb8eyp2J840W","basket":false,"_id":"dlCzxdYIwMEdFzU1"}
-{"name":"truskawki","productCategoryId":"FyfNnb8eyp2J840W","basket":true,"_id":"dlCzxdYIwMEdFzU1"}
-{"name":"truskawki","productCategoryId":"FyfNnb8eyp2J840W","basket":false,"_id":"dlCzxdYIwMEdFzU1"}
-{"$$deleted":true,"_id":"dlCzxdYIwMEdFzU1"}
-{"name":"krakowska sucha","productCategoryId":"Sjc4bohr2GG4KfHq","basket":true,"_id":"jC4qA9VbCcPx9gG0"}
-{"$$deleted":true,"_id":"jC4qA9VbCcPx9gG0"}
 {"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":false,"_id":"HEYejhRWHGKzrs4a"}
 {"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":true,"_id":"HEYejhRWHGKzrs4a"}
+{"name":"masło","productCategoryId":"jd9RXad31u7wF3Tl","basket":true,"_id":"ovgoXEQ2056cg7vi"}
+{"name":"jabłka","productCategoryId":"FyfNnb8eyp2J840W","basket":false,"_id":"EZtgszyvKoIgt0ud"}
+{"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":false,"_id":"HEYejhRWHGKzrs4a"}
+{"name":"jabłka","productCategoryId":"FyfNnb8eyp2J840W","basket":true,"_id":"EZtgszyvKoIgt0ud"}
+{"name":"jabłka","productCategoryId":"FyfNnb8eyp2J840W","basket":false,"_id":"EZtgszyvKoIgt0ud"}
+{"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":true,"_id":"HEYejhRWHGKzrs4a"}
+{"name":"pomidory","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":false,"_id":"wSRCLveXRNL7EScf"}

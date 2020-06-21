@@ -1,10 +1,11 @@
 <section *ngIf="accessToken">
   <h3>
-    Products in shoplist:
+    Products in shopping list:
   </h3>
+  <hr />
   <ul>
     <li *ngFor="let product of products">
-      {{ product.name }} {{ product._id }}
+      {{ product.name }}
       <button (click)="addBasket(product._id)">
         Purchased
       </button>
