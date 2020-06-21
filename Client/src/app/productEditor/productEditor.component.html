@@ -3,7 +3,7 @@
     <h3>Add product:</h3>
     <div>
       <label>Name</label>
-      <input [(ngModel)]="name" />
+      <input [(ngModel)]="name" placeholder="Enter product name" />
     </div>
 
     <div>
@@ -22,7 +22,7 @@
   <hr />
 
   <div>
-    <h3>The list of available products (click on product to delete):</h3>
+    <h3>Remove product:</h3>
     <ul>
       <li *ngFor="let product of products" (click)="handleDelete(product._id)">
         {{ product.name }}
