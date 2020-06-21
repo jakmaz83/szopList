@@ -210,9 +210,16 @@ app.get("/api/products/:id/toggle-basket", async (req, res) => {
 
 //update qty
 
-//array dla shoplisty
+//json dla shoplisty
 app.get("/api/inBasket", async (req, res) => {
   const basket = await db.products.find({ basket: true });
+
+  res.json(basket);
+});
+
+//json dla Product List
+app.get("/api/noBasket", async (req, res) => {
+  const basket = await db.products.find({ basket: false });
 
   res.json(basket);
 });

@@ -91,4 +91,9 @@ export class ApiService {
       .get<Array<Product>>(`${environment.apiUrl}/api/inBasket/`)
       .toPromise();
   }
+  getNoBasketProducts(): Promise<Array<Product>> {
+    return this.httpClient
+      .get<Array<Product>>(`${environment.apiUrl}/api/noBasket/`)
+      .toPromise();
+  }
 }

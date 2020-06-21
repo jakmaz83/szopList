@@ -11,7 +11,7 @@ export class ProductsComponent implements OnInit {
   accessToken = null;
 
   constructor(private apiService: ApiService) {
-    apiService.getProducts().then((data) => {
+    apiService.getNoBasketProducts().then((data) => {
       this.products = data;
       this.accessToken = localStorage.getItem('accessToken');
     });
