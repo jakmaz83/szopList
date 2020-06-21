@@ -1,35 +1,45 @@
 <section class="main">
-  <nav>
-    <div class="navbar">
-      <a
-        routerLink="/"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Home</a
-      >
-      <a *ngIf="accessToken" routerLink="/shopList" routerLinkActive="active"
-        >Shop List</a
-      >
-      <a *ngIf="accessToken" routerLink="/products" routerLinkActive="active"
-        >Products List</a
-      >
-
-      <a
-        *ngIf="accessToken"
-        routerLink="/productEditor"
-        routerLinkActive="active"
-        >Product Editor</a
-      >
-
-      <span class="lst" *ngIf="accessToken" (click)="logout()">Logout</span>
-
-      <a
-        *ngIf="accessToken === null"
-        routerLink="/login"
-        routerLinkActive="active"
-        >Login</a
-      >
-    </div>
+  <nav class="navbar">
+    <img class="logo" src="assets/logo.png" alt="szop" />
+    <ul class="navLinks">
+      <li class="navItem media">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li class="navItem">
+        <a *ngIf="accessToken" routerLink="/shopList" routerLinkActive="active"
+          >Shop List</a
+        >
+      </li>
+      <li class="navItem">
+        <a *ngIf="accessToken" routerLink="/products" routerLinkActive="active"
+          >Products List</a
+        >
+      </li>
+      <li class="navItem">
+        <a
+          class="last"
+          *ngIf="accessToken"
+          routerLink="/productEditor"
+          routerLinkActive="active"
+          >Product Editor</a
+        >
+      </li>
+      <li class="navItem">
+        <a
+          class="last"
+          *ngIf="accessToken === null"
+          routerLink="/login"
+          routerLinkActive="active"
+          >Login</a
+        >
+      </li>
+    </ul>
+    <span class="lst" *ngIf="accessToken" (click)="logout()">Logout</span>
   </nav>
   <router-outlet></router-outlet>
   <footer>

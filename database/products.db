@@ -1,8 +1,6 @@
-{"name":"kefir","productCategoryId":"jd9RXad31u7wF3Tl","basket":true,"_id":"LoSZ580lkXyotwhm"}
-{"name":"ogórki","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":true,"_id":"MC4WCPSvJlNSY7Vo"}
-{"name":"czereśnie","productCategoryId":"FyfNnb8eyp2J840W","basket":false,"_id":"YA5C2MrwCBaKiFPX"}
+{"name":"ogórki","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":false,"_id":"MC4WCPSvJlNSY7Vo"}
+{"name":"czereśnie","productCategoryId":"FyfNnb8eyp2J840W","basket":true,"_id":"YA5C2MrwCBaKiFPX"}
 {"name":"szynka","productCategoryId":"5qG4YIOyvhzNVbUz","basket":false,"_id":"dU8T9Q6KKuMurOc8"}
-{"name":"krakowska","productCategoryId":"5qG4YIOyvhzNVbUz","basket":false,"_id":"gwz0fYggZT2IjHDg"}
-{"name":"pomidory","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":false,"_id":"nqjvSVH9UibBdxTm"}
+{"name":"pomidory","productCategoryId":"ILd3ZuKRDJoC7TBS","basket":true,"_id":"nqjvSVH9UibBdxTm"}
 {"name":"masło","productCategoryId":"jd9RXad31u7wF3Tl","basket":true,"_id":"ovgoXEQ2056cg7vi"}
 {"name":"truskawki","productCategoryId":"FyfNnb8eyp2J840W","basket":true,"_id":"sRGcZyPBk9seliBi"}
