@@ -1,3 +1,9 @@
+section {
+  display: flex;
+  flex-flow: column wrap;
+
+}
+
 input {
   width: 400px;
   padding: 12px 20px;
@@ -26,11 +32,13 @@ label {
   display: block;
   padding-bottom: 5px;
   font-size: 20px;
+  color: #333333;
 
 }
 
 h3 {
   font-size: 25px;
+  color: #333333;
 }
 
 button {
@@ -44,7 +52,35 @@ button {
   background-color: #333333;
 }
 
-li {
+button.list {
+  width: 200px;
+  padding: 2px 2px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  background-color: #333333;
+
+}
+
+ul li {
   list-style: none;
   font-size: 20px;
+  color: #333333;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
 }

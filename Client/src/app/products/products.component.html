@@ -1,17 +1,14 @@
-<h3>
-  Products in the database:
-</h3>
-<section *ngFor="let product of products">
-  <div>
-    <h4>
+<section *ngIf="accessToken">
+  <h3>
+    Products in the database:
+  </h3>
+  <hr />
+  <ul>
+    <li *ngFor="let product of products">
       <a routerLink="/product/{{ product._id }}">{{ product.name }}</a>
-    </h4>
-  </div>
-  <div>
-    <label>Quantity</label>
-    <input #qty type="number" min="0" />
-  </div>
-  <button (click)="addBasket(product._id)">
-    Add to Shop List
-  </button>
+      <button (click)="addBasket(product._id)">
+        Add to List
+      </button>
+    </li>
+  </ul>
 </section>

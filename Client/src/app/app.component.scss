@@ -19,6 +19,7 @@
   display: flex;
   margin-right: auto;
 }
+
 .navLinks a {
   transition: all 0.3s ease 0s;
 }
@@ -26,6 +27,7 @@
 .last {
   border: none;
 }
+
 .lst {
   margin-right: 20px;
   border: none;
@@ -43,7 +45,7 @@ span {
 
   &:hover {
     cursor: pointer;
-    background-color: #111;
+    background-color: #bbb;
   }
 }
 
@@ -51,6 +53,7 @@ span {
   .logo {
     display: none;
   }
+
   .navItem.media {
     display: none;
   }
@@ -58,21 +61,24 @@ span {
   .navLinks {
     flex-flow: column wrap;
   }
-  .navbar > * {
+
+  .navbar>* {
     flex: 1 1 160px;
     padding-right: 20px;
   }
+
   a {
     border-right: none;
     border-bottom: 1px solid #bbb;
   }
+
   .lst {
     text-align: center;
   }
 }
 
 .active {
-  background-color: white;
+  background-color: #bbb;
   color: #111111;
 }
 

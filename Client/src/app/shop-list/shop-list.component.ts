@@ -9,10 +9,12 @@ import { ApiService } from '../apiService';
 })
 export class ShopListComponent {
   products = [];
+  accessToken = null;
   constructor(private apiService: ApiService) {
     apiService.getBasketProducts().then((data) => {
       this.products = data;
     });
+    this.accessToken = localStorage.getItem('accessToken');
   }
 
   /*constructor(private apiService: ApiService) {

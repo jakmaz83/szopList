@@ -1,8 +1,13 @@
-<ul>
-  <li *ngFor="let product of products">
-    {{ product.name }} {{ product._id }}
-    <button (click)="addBasket(product._id)">
-      Remove from Shop List
-    </button>
-  </li>
-</ul>
+<section *ngIf="accessToken">
+  <h3>
+    Products in shoplist:
+  </h3>
+  <ul>
+    <li *ngFor="let product of products">
+      {{ product.name }} {{ product._id }}
+      <button (click)="addBasket(product._id)">
+        Purchased
+      </button>
+    </li>
+  </ul>
+</section>

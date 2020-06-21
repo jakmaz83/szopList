@@ -8,10 +8,12 @@ import { ApiService } from '../apiService';
 })
 export class ProductsComponent implements OnInit {
   products = null;
+  accessToken = null;
 
   constructor(private apiService: ApiService) {
     apiService.getProducts().then((data) => {
       this.products = data;
+      this.accessToken = localStorage.getItem('accessToken');
     });
   }
   onClick(value) {

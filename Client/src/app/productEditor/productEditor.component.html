@@ -22,10 +22,13 @@
   <hr />
 
   <div>
-    <h3>Remove product:</h3>
+    <h3>Remove product from database:</h3>
     <ul>
-      <li *ngFor="let product of products" (click)="handleDelete(product._id)">
-        {{ product.name }}
+      <li *ngFor="let product of products">
+        <span>{{ product.name }}</span>
+        <button class="list" (click)="handleDelete(product._id)">
+          Remove
+        </button>
       </li>
     </ul>
   </div>

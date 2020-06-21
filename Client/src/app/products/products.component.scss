@@ -1,8 +1,44 @@
 h3 {
   font-size: 25px;
+  color: #333333;
 }
 
-li {
-  list-style: none;
+a {
+  text-decoration: none;
   font-size: 20px;
+  color: #333333;
+}
+
+button {
+  height: 40px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li {
+  list-style: none;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  transition: 0.2s;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 200px;
+  padding: 2px 2px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  background-color: #333333;
 }
